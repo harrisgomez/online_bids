@@ -1,0 +1,23 @@
+<a ng-href="#!/logout">Logout</a>
+
+<br>
+
+<h2>{{user}} ended the Bid.</h2>
+<p>Highest Bidder per Product</p>
+
+<h3>Product 1</h3>
+{{highest_bidder1.f_name}} ${{highest_bid1}}
+
+<hr>
+
+<h3>Product 2</h3>
+{{highest_bidder2.f_name}} ${{highest_bid2}}
+
+<hr>
+
+<h3>Product 3</h3>
+{{highest_bidder3.f_name}} ${{highest_bid3}}
+
+<hr>
+
+<button ng-click="startBid()">Start Bid</button>

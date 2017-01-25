@@ -1,0 +1,49 @@
+<h2>Bid Now!</h2>
+<a ng-href="#!/logout">Logout</a>
+
+<h3>Product 1</h3>
+<input type='text' ng-model='product1.bid'>
+<button ng-click='bid_product1()'>Bid</button>
+<span style="color:red">{{errors1}}</span>
+<br>
+<p><b>Current bids:</b></p>
+<div style='border:1px green solid'>
+    <ul ng-repeat="bids in product1_bids | filter:bidFilter1">
+        <li>{{bids._user.f_name}} ${{bids.bid}}</li>
+    </ul>
+</div>
+<input ng-model='bidFilter1._user.f_name' placeholder='Search'>
+
+<hr>
+
+<h3>Product 2</h3>
+<input type='text' ng-model='product2.bid'>
+<button ng-click='bid_product2()'>Bid</button>
+<span style="color:red">{{errors2}}</span>
+<br>
+<p><b>Current bids:</b></p>
+<div style='border:1px green solid'>
+    <ul ng-repeat="bids2 in product2_bids | filter:bidFilter2">
+        <li>{{bids2._user.f_name}} ${{bids2.bid}}</li>
+    </ul>
+</div>
+<input ng-model='bidFilter2._user.f_name' placeholder='Search'>
+
+<hr>
+
+<h3>Product 3</h3>
+<input type='text' ng-model='product3.bid'>
+<button ng-click='bid_product3()'>Bid</button>
+<span style="color:red">{{errors3}}</span>
+<br>
+<p><b>Current bids:</b></p>
+<div style='border:1px green solid'>
+    <ul ng-repeat="bids3 in product3_bids | filter:bidFilter3">
+        <li>{{bids3._user.f_name}} ${{bids3.bid}}</li>
+    </ul>
+</div>
+<input ng-model='bidFilter3._user.f_name' placeholder='Search'>
+
+<br><br>
+
+<button ng-click='endBid()'>End Bid</button>

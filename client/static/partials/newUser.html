@@ -1,0 +1,36 @@
+<h1>Register</h1>
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td><input type='text' ng-model='user.f_name'></td>
+        <td>{{errors.f_name.message}}</td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><input type='text' ng-model='user.l_name'></td>
+        <td>{{errors.l_name.message}}</td>
+    </tr>
+    <tr>
+        <td>Date of Birth:</td>
+        <td><input type='date' ng-model='user.dob'></td>
+        <td>{{errors.dob.message}}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type='text' ng-model='user.email'></td>
+        <td>{{errors.email.message}}</td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td><input type='text' ng-model='user.password'></td>
+        <td>{{errors.password.message}}</td>
+    </tr>
+    <tr>
+        <td>Confirm Password:</td>
+        <td><input type='text' ng-model='user.confirm_pw'></td>
+    </tr>
+    <tr>
+        <td><button ng-click='create()'>Register</button></td>
+        <td><a href="#!/">Existing User</a></td>
+    </tr>
+</table>
